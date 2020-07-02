@@ -1,0 +1,51 @@
+<div class="welcome-wrapper">
+    <div class="sidebar">
+        <div>
+            <h4 class="pad-right-5rem">Welcome to wapp!</h4>
+            <p class="pad-right-5rem mb-4">You're a hop, skip and a jump from being covered.</p>
+            <ul class="register-process">
+                <li class="completed">
+                    <span class="register-step-no">1</span>
+                    <span class="register-step-name">Account creation</span>
+                </li>
+                <li class="completed">
+                    <span class="register-step-no">2</span>
+                    <span class="register-step-name">Health check</span>
+                </li>
+                <li class="completed">
+                    <span class="register-step-no">3</span>
+                    <span class="register-step-name">People on policy</span>
+                </li>
+                <li class="active">
+                    <span class="register-step-no">4</span>
+                    <span class="register-step-name">Quote & payment</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="side-footnote pad-right-5rem">
+            <span class="text-uppercase">All information provided is saved for 30 days</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-body">
+            <form method="POST" data-th-action="${portal.componentUrl({})}">
+                <div class="content-icon mt-5">
+                    <img data-th-src="${portal.assetUrl({'_path=travel/wapp/web/images/icons/quote.png'})}" width="76px" />
+                </div>
+                <h3>Your personalised quotation</h3>
+                <p>There are 2 parts to your quotation:</p>
+                <ol class="pl-3">
+                    <li><strong>On-trip cover</strong> what you pay per day when on a trip outside the UK.</li>
+                    <li><strong>A monthly subscription</strong> which covers cancelling or cutting short a trip.</li>
+                </ol>
+                <p class="mb-5">Let’s start with your On-trip cover.</p>
+
+                <div class="d-sm-flex mt-5">
+                    <button class="btn btn-primary cont-btn mr-md-3 mb-3 mb-sm-0" name="action" value="do-it-later">Do it later</button>
+                    <button class="btn btn-primary cont-btn" name="action" value="personalised-quote">Start <span class="icon-arrow-right pull-right ml-3"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

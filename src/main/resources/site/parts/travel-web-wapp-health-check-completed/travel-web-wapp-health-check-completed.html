@@ -1,0 +1,45 @@
+<div class="welcome-wrapper">
+    <div class="sidebar">
+        <div>
+            <h4 class="pad-right-5rem">Welcome to wapp!</h4>
+            <p class="pad-right-5rem mb-4">You're a hop, skip and a jump from being covered.</p>
+            <ul class="register-process">
+                <li class="completed">
+                    <span class="register-step-no">1</span>
+                    <span class="register-step-name">Account creation</span>
+                </li>
+                <li class="completed">
+                    <span class="register-step-no">2</span>
+                    <span class="register-step-name">Health check</span>
+                </li>
+                <li>
+                    <span class="register-step-no">3</span>
+                    <span class="register-step-name">People on policy</span>
+                </li>
+                <li>
+                    <span class="register-step-no">4</span>
+                    <span class="register-step-name">Quote & payment</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="side-footnote pad-right-5rem">
+            <span class="text-uppercase">All information provided is saved for 30 days</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-body">
+            <form method="POST" data-th-action="${portal.componentUrl({})}">
+                <div class="content-icon mt-5">
+                    <img data-th-src="${portal.assetUrl({'_path=travel/wapp/web/images/icons/health-ok.png'})}" width="108px" />
+                </div>
+                <h2>You’ve successfully completed your health check!</h2>
+                <p class="mb-5">Let’s move on to people on policy</p>
+
+                <div class="mt-5">
+                    <button class="btn btn-primary cont-btn">Start <span class="icon-arrow-right pull-right"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

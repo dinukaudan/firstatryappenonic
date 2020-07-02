@@ -1,0 +1,50 @@
+<div class="welcome-wrapper">
+    <div class="sidebar">
+        <div>
+            <h4 class="pad-right-5rem">Welcome to wapp!</h4>
+            <p class="pad-right-5rem mb-4">You're a hop, skip and a jump from being covered.</p>
+            <ul class="register-process">
+                <li class="completed">
+                    <span class="register-step-no">1</span>
+                    <span class="register-step-name">Account creation</span>
+                </li>
+                <li class="active">
+                    <span class="register-step-no">2</span>
+                    <span class="register-step-name">Health check</span>
+                </li>
+                <li>
+                    <span class="register-step-no">3</span>
+                    <span class="register-step-name">People on policy</span>
+                </li>
+                <li>
+                    <span class="register-step-no">4</span>
+                    <span class="register-step-name">Quote & payment</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="side-footnote pad-right-5rem">
+            <span class="text-uppercase">All information provided is saved for 30 days</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <form method="POST" data-th-action="${portal.componentUrl({})}">
+            <div class="content-title">
+                <a href="#" class="btn-link back-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+                <span>Health check</span>
+                <span>1/4</span>
+            </div>
+            <div class="content-body">
+                <div class="content-icon">
+                    <img data-th-src="${portal.assetUrl({'_path=travel/wapp/web/images/icons/medicine.png'})}" width="76px" />
+                </div>
+                <h3>Have you visited your GP Surgery and/or been prescribed medication in the last 2 years?</h3>
+
+                <div class="d-sm-flex mt-5">
+                    <button class="btn btn-primary cont-btn mr-md-5 mb-3 mb-sm-0" type="submit" name="hasMedicalCondition" value="Y">Yes</button>
+                    <button class="btn btn-primary cont-btn" type="submit" name="hasMedicalCondition" value="N">No</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

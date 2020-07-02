@@ -1,0 +1,59 @@
+$break-sm: 460px;
+$break-xs: 360px;
+
+@mixin respond-to($media) {
+    @if $media == sm-mobile-portrait {
+        @media only screen and (max-width: $break-sm) { @content; }
+    }
+
+    @if $media == xs-mobile-portrait {
+        @media only screen and (max-width: $break-xs) { @content; }
+    }
+}
+
+@mixin boxShadow {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    -o-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+@mixin borderRadius($radius: 25px) {
+    border-radius: $radius !important;
+    -webkit-border-radius: $radius !important;
+    -moz-border-radius: $radius !important;
+    -o-border-radius: $radius !important;
+}
+
+@mixin centerDiv {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+@mixin flexWrapper($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content};
+    &:-moz-placeholder           {@content};
+    &::-moz-placeholder          {@content};
+    &:-ms-input-placeholder      {@content};
+}
+
+@mixin skew($angle: -25deg) {
+    -moz-transform: skew($angle, 0);
+    -ms-transform: skew($angle, 0);
+    -o-transform: skew($angle, 0);
+    -webkit-transform: skew($angle, 0);
+    transform: skew($angle, 0);
+}
+
+@mixin ifOnlyIE {
+    @media all and (-ms-high-contrast:none), (-ms-high-contrast: active) {
+        @content;
+    }
+}

@@ -1,0 +1,96 @@
+<div class="welcome-wrapper">
+    <div class="sidebar">
+        <div>
+            <h4 class="pad-right-5rem">Welcome to wapp!</h4>
+            <p class="pad-right-5rem mb-4">You're a hop, skip and a jump from being covered.</p>
+            <ul class="register-process">
+                <li class="completed">
+                    <span class="register-step-no">1</span>
+                    <span class="register-step-name">Account creation</span>
+                </li>
+                <li class="active">
+                    <span class="register-step-no">2</span>
+                    <span class="register-step-name">Health check</span>
+                </li>
+                <li>
+                    <span class="register-step-no">3</span>
+                    <span class="register-step-name">People on policy</span>
+                </li>
+                <li>
+                    <span class="register-step-no">4</span>
+                    <span class="register-step-name">Quote & payment</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="side-footnote pad-right-5rem">
+            <span class="text-uppercase">All information provided is saved for 30 days</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-title">
+            <a href="#" class="btn-link back-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+            <span>Create your account</span>
+            <span>4/4</span>
+        </div>
+        <div class="content-body">
+            <form method="POST" data-th-action="${portal.componentUrl({})}" id="registerStep4Form">
+                <h2>How can we contact you?</h2>
+
+                <p class="mb-4">We won't send much, but we'd like to keep you up-to-date with exclusive offers that are relevant to you. 
+                    Please let us know how you would prefer to receive these.</p>
+                <div class="mb-4">
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input" id="viaEmail" name="contactViaEmail" value="Y">
+                        <label class="custom-control-label" for="viaEmail">Via email</label>
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="viaSms" name="contactViaSMS" value="Y">
+                        <label class="custom-control-label" for="viaSms">Via SMS</label>
+                    </div>
+                </div>
+                <p class="mb-2">We'll always send important things, like changes to account security or legal documents by email.</p>
+                <div class="mb-5 position-relative">
+                    <a href="#" class="btn-link" data-toggle="modal" data-target="#privacyPolicy">See our Privacy Policy</a>
+
+                    <!-- Modal start -->
+                    <div class="modal black-title-modal fade" id="privacyPolicy" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 text-center">Privacy policy</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor purus, ullamcorper quis venenatis et, facilisis eu enim. Nunc a arcu semper, dapibus felis ac, tempor lectus.
+                                            Curabitur tortor purus, ullamcorper quis venenatis et, facilisis eu enim. Nunc a arcu semper, dapibus felis ac, tempor lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor purus, ullamcorper quis venenatis et, facilisis eu enim. Nunc a arcu semper, dapibus felis ac, tempor lectus.
+                                            Nunc a arcu semper, dapibus felis ac, tempor lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor purus, ullamcorper quis venenatis et, facilisis eu enim. Nunc a arcu semper, dapibus felis ac, tempor lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor purus, ullamcorper quis venenatis et, facilisis eu enim.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor purus, ullamcorper quis venenatis et, facilisis eu enim. Nunc a arcu semper, dapibus felis ac, 
+                                            Consectetur adipiscing elit. Curabitur tortor purus, ullamcorper quis venenatis et, facilisis eu enim. Nunc a arcu semper, dapibus felis ac, tempor lectuu enim. Nunc a arcu semper, dapibus felis ac, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor purus, ullamcorper quis venenatis et, facilisis eu enim. Nunc a arcu semper, dapibus felis ac, tempor lectuLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor purus, ullamcorper quis venenatis et, facilisis eu enim. Nunc a arcu semper, dapibus felis ac, tempor lectus.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary px-5" data-dismiss="modal" aria-label="Close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end -->
+                </div>
+                <div class="mt-5">
+                    <button class="btn btn-primary cont-btn" type="submit">Next <span class="icon-arrow-right pull-right"></span></button>
+                </div>
+            </form>
+        </div>
+
+        <script type="text/javascript" data-th-if="${#strings.equals('error',status)}" th:inline="javascript">
+            window.addEventListener('load', function() {
+                /*<![CDATA[*/
+                    var message = /*[[${message}]]*/ 'default';
+                    alert(message);
+                /*]]>*/
+            })
+        </script>
+    </div>
+</div>

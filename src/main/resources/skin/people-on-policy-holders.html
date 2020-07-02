@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAPP Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="description" content="content" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/public/icomoon.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/public/jquery-ui.min.css" media="screen"/>
+</head>
+<body>
+    <div class="main-wrapper crt-acc-pg">
+        <aside>
+            <a href="#" class="wapp-logo">
+                <div class="seperated-logo">
+                    <img class="logo-w" src="assets/images/logo-w.png" />
+                    <img class="logo-wapp" src="assets/images/logo-wapp.png" />
+                </div>
+            </a>
+            <div class="mob-pg-header">Registration</div>
+            <span class="circle"></span>
+        </aside>
+        <section class="content">
+            <div class="welcome-wrapper">
+                <div class="sidebar">
+                    <div>
+                        <h4 class="pad-right-5rem">Welcome to wapp!</h4>
+                        <p class="pad-right-5rem mb-4">You're a hop, skip and a jump from being covered.</p>
+                        <ul class="register-process">
+                            <li class="completed">
+                                <span class="register-step-no">1</span>
+                                <span class="register-step-name">Account creation</span>
+                            </li>
+                            <li class="active">
+                                <span class="register-step-no">2</span>
+                                <span class="register-step-name">Health check</span>
+                            </li>
+                            <li>
+                                <span class="register-step-no">3</span>
+                                <span class="register-step-name">People on policy</span>
+                            </li>
+                            <li>
+                                <span class="register-step-no">4</span>
+                                <span class="register-step-name">Quote & payment</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-footnote pad-right-5rem">
+                        <span class="text-uppercase">All information provided is saved for 30 days</span>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="content-title justify-content-center">
+                        <span>Travellers</span>
+                    </div>
+                    <div class="content-body policy-wrapper">
+                        <h3>Policy Holder</h3>
+                        <div class="accordion policy-holder-accord" id="accordionExample" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn toggle-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="holder-id">J</span> John Smith
+                                        </button>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </h2>
+                                </div>
+                        
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body d-sm-flex">
+                                        <div class="holder-details">
+                                            <div class="details-block">
+                                                <h6>Personal details</h6>
+                                                <ul>
+                                                    <li>Date of birth: <span>12/09/78</span></li>
+                                                    <li>UK Resident</li>
+                                                </ul>
+                                                <a href="#" class="btn-link">Edit</a>
+                                            </div>
+                                            <div class="details-block">
+                                                <h6>Medical details</h6>
+                                                <ul>
+                                                    <li>Diabetes</li>
+                                                </ul>
+                                                <a href="#" class="btn-link">Edit</a>
+                                            </div>
+                                        </div>
+                                        <div class="rem-policy-link">
+                                            <a href="#" class="btn-link align-self-end">Remove from my policy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Other people on policy</h3>
+                        <div class="accordion policy-holder-accord" id="accordionExample1" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn toggle-btn collapsed d-sm-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <div class="d-flex d-sm-block">
+                                                <span class="holder-id">K</span> 
+                                                <span>Doe</span>
+                                            </div>
+                                            <h6 class="switch-label">Added to next trip</h6>
+                                        </button>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </h2>
+                                    <div class="check-next-trip">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="AddedNextTrip">
+                                            <label class="custom-control-label" for="AddedNextTrip">&nbsp;</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo">
+                                    <div class="card-body d-sm-flex">
+                                        <div class="holder-details">
+                                            <div class="details-block">
+                                                <h6>Personal details</h6>
+                                                <ul>
+                                                    <li>Date of birth: <span>12/09/78</span></li>
+                                                    <li>UK Resident</li>
+                                                </ul>
+                                                <a href="#" class="btn-link">Edit</a>
+                                            </div>
+                                            <div class="details-block">
+                                                <h6>Medical details</h6>
+                                                <ul>
+                                                    <li>Diabetes</li>
+                                                </ul>
+                                                <a href="#" class="btn-link">Edit</a>
+                                            </div>
+                                        </div>
+                                        <div class="rem-policy-link">
+                                            <a href="#" class="btn-link align-self-end">Remove from my policy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn toggle-btn collapsed d-sm-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                            <div class="d-flex d-sm-block">
+                                                <span class="holder-id">K</span> 
+                                                <span>Doe</span>
+                                            </div>
+                                            <h6 class="switch-label">Added to next trip</h6>
+                                        </button>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </h2>
+                                    <div class="check-next-trip">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="AddedNextTrip1">
+                                            <label class="custom-control-label" for="AddedNextTrip1">&nbsp;</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                                    <div class="card-body d-sm-flex">
+                                        <div class="holder-details">
+                                            <div class="details-block">
+                                                <h6>Personal details</h6>
+                                                <ul>
+                                                    <li>Date of birth: <span>12/09/78</span></li>
+                                                    <li>UK Resident</li>
+                                                </ul>
+                                                <a href="#" class="btn-link">Edit</a>
+                                            </div>
+                                            <div class="details-block">
+                                                <h6>Medical details</h6>
+                                                <ul>
+                                                    <li>Diabetes</li>
+                                                </ul>
+                                                <a href="#" class="btn-link">Edit</a>
+                                            </div>
+                                        </div>
+                                        <div class="rem-policy-link">
+                                            <a href="#" class="btn-link align-self-end">Remove from my policy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-sm-flex mb-5 justify-content-between">
+                            <button class="btn btn-primary cont-btn pl-4 mb-3 mb-sm-0" data-toggle="modal" data-target="#addTraveller">Add traveller <span class="icon-plus pull-right ml-3"></span></button>
+                            <button class="btn btn-ternary cont-btn pl-4">Move on to quote <span class="icon-arrow-right pull-right ml-3"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal start -->
+    <div class="modal page-modal fade" id="addTraveller" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Add Traveller page 1 -->
+                    <div class="content-title">
+                        <a href="#" class="btn-link back-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+                        <span>Add traveller</span>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="content-body">
+                        <h2>Traveller information</h2>
+                        <p class="mb-5">Please fill in all fields with details matching your passport</p>
+                        <div class="form-group wapp-form-group">
+                            <label>First Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group wapp-form-group">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group wapp-form-group error-fld">
+                            <label>Date of Birth</label>
+                            <input type="date" class="form-control" />
+                            <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Sorry, you have reached the maximum number of adults in your policy</div>
+                        </div>
+                        <div class="form-group wapp-form-group">
+                            <label>Mobile Number</label>
+                            <div class="mobile-field form-control">
+                                <div class="fld-select">
+                                    <select>
+                                        <option>+44</option>
+                                    </select>
+                                </div>
+                                <input type="text" class="overflow-hidden" />
+                            </div>
+                        </div>
+                        <div class="md-checkbox">
+                            <input type="checkbox" id="confirmUKResident">
+                            <label for="confirmUKResident" class="text-left">
+                                <small>I confirm that I am a UK resident and not a resident of the Channel Islands or Isle of Man.</small> 
+                            </label>
+                        </div>
+                        <small class="pl-5 d-block text-left"><a href="#" class="btn-link font-sm">Why do I have to be a UK resident?</a></small>
+                        <div class="mt-5">
+                            <button class="btn btn-primary cont-btn">Next <span class="icon-arrow-right pull-right"></span></button>
+                        </div>
+                        <div class="my-5">
+                            <a href="#" class="btn-link font-dark">Cancel adding new traveller</a>
+                        </div>
+                    </div>
+
+                    <!-- Add Traveller page 2 -->
+                    <div class="content-title">
+                        <a href="#" class="btn-link back-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+                        <span>Add traveller</span>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="content-body">
+                        <div class="content-icon">
+                            <img src="assets/images/icons/medicine.png" width="76px" />
+                        </div>
+                        <h3>Has {name} visited your GP Surgery and/or been prescribed medication in the last 2 years?</h3>
+                        
+                        <div class="d-sm-flex mt-5">
+                            <button class="btn btn-primary cont-btn mr-5 mb-3 mb-sm-0">Yes</button>
+                            <button class="btn btn-primary cont-btn">No</button>
+                        </div>
+                        <div class="my-5">
+                            <a href="#" class="btn-link font-dark">Cancel adding new traveller</a>
+                        </div>
+                    </div>
+
+                    <!-- Add Traveller page 3 -->
+                    <div class="content-title">
+                        <a href="#" class="btn-link back-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+                        <span>Add traveller</span>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="content-body">
+                        <div class="content-icon">
+                            <img src="assets/images/icons/file.png" width="76px" />
+                        </div>
+                        <h3>Is {name} awaiting a diagnosis or test results for a medical condition?</h3>
+                        
+                        <div class="d-sm-flex mt-5">
+                            <button class="btn btn-primary cont-btn mr-5 mb-3 mb-sm-0">Yes</button>
+                            <button class="btn btn-primary cont-btn">No</button>
+                        </div>
+                        <div class="my-5">
+                            <a href="#" class="btn-link font-dark">Cancel adding new traveller</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+
+    <script type="text/javascript" src="assets/js/public/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/public/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/public/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/public/moment.js"></script>
+    <script type="text/javascript" src="assets/js/public/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>

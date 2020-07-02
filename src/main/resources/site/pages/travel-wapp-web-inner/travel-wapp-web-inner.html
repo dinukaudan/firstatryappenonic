@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAPP Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="description" content="content" />
+    <link rel="shortcut icon" data-th-href="${portal.assetUrl({'_path=assets/travel/wapp/web/images/favicon.ico'})}"/>
+    <link rel="stylesheet" type="text/css" data-th-href="${portal.assetUrl({'_path=travel/wapp/web/css/style.css'})}" media="screen"/>
+    <link rel="stylesheet" type="text/css" data-th-href="${portal.assetUrl({'_path=travel/wapp/web/css/public/icomoon.css'})}" media="screen"/>
+    <link rel="stylesheet" type="text/css" data-th-href="${portal.assetUrl({'_path=travel/wapp/web/css/public/jquery-ui.min.css'})}" media="screen"/>
+
+
+</head>
+<body>
+    <div class="main-wrapper crt-acc-pg">
+        <aside>
+            <a href="#" class="wapp-logo">
+                <div class="seperated-logo">
+                    <img class="logo-w" data-th-src="${portal.assetUrl({'_path=travel/wapp/web/images/logo-w.png'})}" />
+                    <img class="logo-wapp" data-th-src="${portal.assetUrl({'_path=travel/wapp/web/images/logo-wapp.png'})}" />
+                </div>
+            </a>
+            <div class="mob-pg-header">Registration</div>
+            <span class="circle"></span>
+        </aside>
+        <!-- Main body -->
+        <!--/* Render any components added to this region - except for Fragments. */-->
+        <section class="content" data-portal-region="main" data-th-unless="${isFragment}">
+            <div data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
+                <div data-portal-component="${component.path}" data-th-remove="tag"></div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/jquery.js'})}" src="assets/travel/wapp/web/js/public/jquery.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/jquery-ui.min.js'})}" src="assets/travel/wapp/web/js/public/jquery-ui.min.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/bootstrap.bundle.min.js'})}" src="assets/travel/wapp/web/js/public/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/moment.js'})}" src="assets/travel/wapp/web/js/public/moment.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/bootstrap-datetimepicker.min.js'})}" src="assets/travel/wapp/web/js/public/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/custom.js'})}" src="assets/travel/wapp/web/js/custom.js"></script>
+</body>
+</html>

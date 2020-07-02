@@ -1,0 +1,75 @@
+<div class="welcome-wrapper">
+    <div class="sidebar">
+        <div>
+            <h4 class="pad-right-5rem">Welcome to wapp!</h4>
+            <p class="pad-right-5rem mb-4">You're a hop, skip and a jump from being covered.</p>
+            <ul class="register-process">
+                <li class="completed">
+                    <span class="register-step-no">1</span>
+                    <span class="register-step-name">Account creation</span>
+                </li>
+                <li class="active">
+                    <span class="register-step-no">2</span>
+                    <span class="register-step-name">Health check</span>
+                </li>
+                <li>
+                    <span class="register-step-no">3</span>
+                    <span class="register-step-name">People on policy</span>
+                </li>
+                <li>
+                    <span class="register-step-no">4</span>
+                    <span class="register-step-name">Quote & payment</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="side-footnote pad-right-5rem">
+            <span class="text-uppercase">All information provided is saved for 30 days</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-title">
+            <a href="#" class="btn-link back-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+            <span>Create your account</span>
+            <span>3/4</span>
+        </div>
+        <div class="content-body">
+            <form method="POST" data-th-action="${portal.componentUrl({})}" id="registerStep3Form">
+                <h2>Now, we need your home address</h2>
+                <p class="mb-3">Enter your postcode or enter the address manually.</p>
+                <div class="mb-5 position-relative">
+                    <a href="#" class="btn-link">Why do we need this?</a>
+                </div>
+                <div class="form-group wapp-form-group">
+                    <label>Address Line 1</label>
+                    <input type="text" class="form-control" name="address1"/>
+                </div>
+                <div class="form-group wapp-form-group">
+                    <label>Address Line 2</label>
+                    <input type="text" class="form-control" name="address2"/>
+                </div>
+                <div class="form-group wapp-form-group">
+                    <label>City</label>
+                    <input type="text" class="form-control" name="city"/>
+                </div>
+                <div class="form-group wapp-form-group">
+                    <label>Post Code</label>
+                    <div class="search-fld">
+                        <input type="text" class="form-control" name="postcode"/>
+                        <span class="search-icon"></span>
+                    </div>
+                </div>
+                <div class="md-checkbox">
+                    <input type="checkbox" id="confirmUKResident" name="ukResidentConfirmation" value="Y">
+                    <label for="confirmUKResident">
+                        <small>I confirm that I am a UK resident and not a resident of the Channel Islands or Isle of Man.</small> 
+                    </label>
+                </div>
+                <small class="pl-5 d-block"><a href="#" class="btn-link font-sm">Why do I have to be a UK resident?</a></small>
+                <div class="mt-5">
+                    <button class="btn btn-primary cont-btn" type="submit">Next <span class="icon-arrow-right pull-right"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

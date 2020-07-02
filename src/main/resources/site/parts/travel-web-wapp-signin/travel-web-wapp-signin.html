@@ -1,0 +1,45 @@
+<div class="signin-wrapper">
+
+    <h2 class="mb-5">Login to Wapp</h2>
+    <form method="POST" data-th-action="${portal.componentUrl({})}" id="signinForm">
+        <div class="form-group wapp-form-group">
+            <label>Email Address</label>
+            <input type="text" class="form-control" name="email"/>
+        </div>
+        <div class="form-group wapp-form-group">
+            <label>Password</label>
+            <div class="eye-pwd">
+                <input type="password" class="form-control" name="loginPassword"/>
+                <span class="icon-eye"></span>
+            </div>
+        </div>
+        <div class="my-4">
+            <button class="btn btn-primary w-100">Login <span class="icon-arrow-right pull-right"></span></button>
+        </div>
+    </form>
+    <div class="d-flex justify-content-between mb-5">
+        <a href="/forgot/password" data-th-href="${portal.componentUrl({})+'?action=forgot-password'}" class="primary-link">Forgot your password?</a>
+        <a href="/register" data-th-href="${portal.componentUrl({})+'?action=register'}" class="primary-link">Don't have an account? Register</a>
+    </div>
+    <div class="get-app-sec">
+        <h6>Get the app</h6>
+        <div class="d-flex">
+            <a href="#" class="mr-2"><img data-th-src="${portal.assetUrl({'_path=travel/wapp/web/images/app-store.png'})}" width="131px" /></a>
+            <a href="#"><img data-th-src="${portal.assetUrl({'_path=travel/wapp/web/images/google-play.png'})}" width="131px" /></a>
+        </div>
+    </div>
+<h3>  [[${message}]]</h3>
+    <div class="wapp-alert success" data-th-if="${#strings.equals('password-reset-success',status)}">
+        [[${message}]]
+    </div>
+
+</div>
+
+<script type="text/javascript" data-th-if="${#strings.equals('error',status)}" th:inline="javascript">
+    window.addEventListener('load', function() {
+        /*<![CDATA[*/
+            var message = /*[[${message}]]*/ 'default';
+            alert(message);
+        /*]]>*/
+    })
+</script>

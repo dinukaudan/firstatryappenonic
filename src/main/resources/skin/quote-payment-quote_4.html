@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAPP Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="description" content="content" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/public/icomoon.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/public/jquery-ui.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/public/jquery.range.css" media="screen"/>
+</head>
+<body>
+    <div class="main-wrapper crt-acc-pg">
+        <aside>
+            <a href="#" class="wapp-logo">
+                <div class="seperated-logo">
+                    <img class="logo-w" src="assets/images/logo-w.png" />
+                    <img class="logo-wapp" src="assets/images/logo-wapp.png" />
+                </div>
+            </a>
+            <div class="mob-pg-header">Registration</div>
+            <span class="circle"></span>
+        </aside>
+        <section class="content">
+            <div class="welcome-wrapper">
+                <div class="sidebar">
+                    <div>
+                        <h4 class="pad-right-5rem">Welcome to wapp!</h4>
+                        <p class="pad-right-5rem mb-4">You're a hop, skip and a jump from being covered.</p>
+                        <ul class="register-process">
+                            <li class="completed">
+                                <span class="register-step-no">1</span>
+                                <span class="register-step-name">Account creation</span>
+                            </li>
+                            <li class="active">
+                                <span class="register-step-no">2</span>
+                                <span class="register-step-name">Health check</span>
+                            </li>
+                            <li>
+                                <span class="register-step-no">3</span>
+                                <span class="register-step-name">People on policy</span>
+                            </li>
+                            <li>
+                                <span class="register-step-no">4</span>
+                                <span class="register-step-name">Quote & payment</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="side-footnote pad-right-5rem">
+                        <span class="text-uppercase">All information provided is saved for 30 days</span>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="content-title">
+                        <a href="#" class="btn-link back-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+                        <span>Quote</span>
+                        <span>4/4</span>
+                    </div>
+                    <div class="content-body policy-wrapper">
+                        <h2>Your personalised quote</h2>
+
+                        <p class="para-text mb-5">This quote is valid for up to 30 days. All cover levels are per person</p>
+
+                        <div class="accordion policy-holder-accord" id="accordionExample" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" id="coverPayFor">
+                                    <h2 class="mb-0">
+                                        <button class="btn collapsed d-sm-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseCoverPayFor" aria-expanded="false" aria-controls="collapseCoverPayFor">
+                                            <div class="d-flex align-items-center">
+                                                <div class="activity-icon">
+                                                    <img src="assets/images/icons/couple.png">
+                                                </div>
+                                                <span class="font-md">Cover you are paying for</span>
+                                            </div>
+                                        </button>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </h2>
+                                </div>
+                                <div id="collapseCoverPayFor" class="collapse" aria-labelledby="coverPayFor">
+                                    <div class="card-body">
+                                        <ul class="activity-cat-list">
+                                            <li class="pb-2">
+                                                <div class="font-md">Baggage &amp; belongings cover</div>
+                                                <div><span class="para-text darken">&pound;400</span></div>
+                                            </li>
+                                            <li class="pb-2">
+                                                <div class="font-md">Trip claims excess</div>
+                                                <div><span class="para-text darken">&pound;75</span></div>
+                                            </li>
+                                            <li class="pb-2">
+                                                <div class="font-md">Gadget cover</div>
+                                                <div><span class="para-text darken">4 Devices</span></div>
+                                            </li>
+                                            <li class="pb-2">
+                                                <div class="font-md">Cancellation cover</div>
+                                                <div><span class="para-text darken">&pound;750</span></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="coverIncStandard">
+                                    <h2 class="mb-0">
+                                        <button class="btn collapsed  d-sm-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseCoverIncStandard" aria-expanded="false" aria-controls="collapseCoverIncStandard">
+                                            <div class="d-flex align-items-center">
+                                                <div class="activity-icon">
+                                                    <img src="assets/images/icons/check.png">
+                                                </div>
+                                                <span class="font-md">Cover included as standard</span>
+                                            </div>
+                                        </button>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </h2>
+                                </div>
+                                <div id="collapseCoverIncStandard" class="collapse" aria-labelledby="coverIncStandard">
+                                    <div class="card-body">
+                                        <ul class="activity-cat-list">
+                                            <li>
+                                                <div class="pr-sm-5">
+                                                    <p class="para-text darken mb-2">Emergency Medical Cover</p>
+                                                    <p class="font-sm m-0">No limit to the amount paid for of emergency medical treatment needed and costs of getting you home <i class="fa fa-info-circle disabled ml-1" aria-hidden="true"></i></p>
+                                                </div>
+                                                <div><span class="para-text darken">&pound;Unlimited</span></div>
+                                            </li>
+                                            <li>
+                                                <div class="pr-sm-5">
+                                                    <p class="para-text darken mb-2">Cancellation Cover Excess</p>
+                                                    <p class="font-sm m-0">You have nothing deducted from your Cancellation claim amount <i class="fa fa-info-circle disabled ml-1" aria-hidden="true"></i></p>
+                                                </div>
+                                                <div><span class="para-text darken">&pound;0</span></div>
+                                            </li>
+                                            <li>
+                                                <div class="pr-sm-5">
+                                                    <p class="para-text darken mb-2">Personal liability cover</p>
+                                                    <p class="font-sm m-0">No limit to the amount paid for of emergency medical treatment needed and costs of getting you home <i class="fa fa-info-circle disabled ml-1" aria-hidden="true"></i></p>
+                                                </div>
+                                                <div><span class="para-text darken">&pound;2,000,000</span></div>
+                                            </li>
+                                        </ul>
+                                        <hr class="border-seperator" />
+                                        <p class="para-text darken">Other Cover Limits, per person</p>
+                                        <ul class="activity-cat-list">
+                                            <li>
+                                                <div class="font-sm">Emergency dental, single items limit, valuables, personal money, passport <i class="fa fa-info-circle disabled ml-1" aria-hidden="true"></i></div>
+                                                <div><span class="para-text darken">&pound;500</span></div>
+                                            </li>
+                                            <li>
+                                                <div class="font-sm">Additional accommodation & travel <i class="fa fa-info-circle disabled ml-1" aria-hidden="true"></i></div>
+                                                <div><span class="para-text darken">&pound;2000</span></div>
+                                            </li>
+                                            <li>
+                                                <div class="font-sm">Missed departure <i class="fa fa-info-circle disabled ml-1" aria-hidden="true"></i></div>
+                                                <div><span class="para-text darken">&pound;1000</span></div>
+                                            </li>
+                                            <li>
+                                                <div class="font-sm">Funeral expenses <i class="fa fa-info-circle disabled ml-1" aria-hidden="true"></i></div>
+                                                <div><span class="para-text darken">&pound;5000</span></div>
+                                            </li>
+                                            <li>
+                                                <div class="font-sm">Travel delay after 6 hours payment <i class="fa fa-info-circle disabled ml-1" aria-hidden="true"></i></div>
+                                                <div><span class="para-text darken">&pound;50</span></div>
+                                            </li>
+                                            <li>
+                                                <div class="font-sm">Funeral expenses <i class="fa fa-info-circle disabled ml-1" aria-hidden="true"></i></div>
+                                                <div><span class="para-text darken">&pound;5000</span></div>
+                                            </li>
+                                        </ul>
+                                        <hr class="border-seperator" />
+                                        <p class="font-sm text-center">
+                                            <span>More information can be found in the IPID:</span>
+                                            <strong><a href="#" class="btn-link">View your policy (IPID)</a></strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <ul class="activity-cat-list">
+                                    <li>
+                                        <div>
+                                            <h5 class="font-md mb-0">People on this policy</h5>
+                                            <p class="font-sm mb-0">You, Gauthier, Leelah, Xenie</p>
+                                        </div>
+                                        <div><span class="para-text darken">4</span></div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h5 class="font-md mb-0">Travellers on next trip</h5>
+                                            <p class="font-sm mb-0">You, Gauthier, Leelah</p>
+                                        </div>
+                                        <div><span class="para-text darken">3</span></div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h5 class="font-md mb-0">Favourite activities</h5>
+                                            <p class="font-sm mb-0">Skiing</p>
+                                        </div>
+                                        <div><span class="para-text darken">1</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>On trip cover</h3>
+                        <h5 class="block-sub-header">Total cost for travellers on next trip</h5>
+
+                        <div class="mb-5">
+                            <div class="d-sm-flex justify-content-between mb-3">
+                                <span class="para-text darken text-center">Amount you will pay per day in each region</span>
+                                <span class="d-none d-sm-block"><a href="#" class="btn-link font-sm" data-toggle="modal" data-target="#regionCountryList">See a list of countries by region</a></span>
+                            </div>
+    
+                            <div class="row cust-gutter">
+                                <div class="col">
+                                    <div class="rgn-pd-card">
+                                        <div class="region-name">European<br> countries</div>
+                                        <div class="per-day-amount"><span class="para-text darken">&pound;1</span> / day</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="rgn-pd-card">
+                                        <div class="region-name">USA, Canada, Mexico, Bermuda & Caribbean</div>
+                                        <div class="per-day-amount"><span class="para-text darken">&pound;1</span> / day</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="rgn-pd-card">
+                                        <div class="region-name">Rest of<br> the world</div>
+                                        <div class="per-day-amount"><span class="para-text darken">&pound;1</span> / day</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <span class="d-block d-sm-none"><a href="#" class="btn-link font-sm" data-toggle="modal" data-target="#regionCountryList">See a list of countries by region</a></span>
+                            </div>
+
+                            <!-- Modal start -->
+                            <div class="modal page-modal fade" id="regionCountryList" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">List of countries by region</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="accordion policy-holder-accord" id="accordionExample" aria-multiselectable="true">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn d-flex align-items-center pad-right-2rem" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                <span class="holder-id">E</span> Europe
+                                                            </button>
+                                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                        </h2>
+                                                    </div>
+                                            
+                                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Albania</li>
+                                                                        <li>Andorra</li>
+                                                                        <li>Armenia*</li>
+                                                                        <li>Austria</li>
+                                                                        <li>Azerbaijan*</li>
+                                                                        <li>Belarus</li>
+                                                                        <li>Belgium</li>
+                                                                        <li>Bosnia and Herzegovina</li>
+                                                                        <li>Bulgaria</li>
+                                                                        <li>Croatia</li>
+                                                                        <li>Cyprus</li>
+                                                                        <li>Czech Republic</li>
+                                                                        <li>Denmark*</li>
+                                                                        <li>Estonia</li>
+                                                                        <li>Finland</li>
+                                                                        <li>France*</li>
+                                                                        <li>Georgia*</li>
+                                                                        <li>Germany</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Greece</li>
+                                                                        <li>Hungary</li>
+                                                                        <li>Iceland</li>
+                                                                        <li>Ireland</li>
+                                                                        <li>Italy</li>
+                                                                        <li>Kazakhstan*</li>
+                                                                        <li>Kosovo</li>
+                                                                        <li>Latvia</li>
+                                                                        <li>Liechtenstein</li>
+                                                                        <li>Lithuania</li>
+                                                                        <li>Luxembourg</li>
+                                                                        <li>Malta</li>
+                                                                        <li>Moldova</li>
+                                                                        <li>Monaco</li>
+                                                                        <li>Montenegro</li>
+                                                                        <li>Netherlands*</li>
+                                                                        <li>North Macedonia</li>
+                                                                        <li>Norway</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Poland</li>
+                                                                        <li>Portugal</li>
+                                                                        <li>Romania</li>
+                                                                        <li>Russia*</li>
+                                                                        <li>San Marino</li>
+                                                                        <li>Serbia</li>
+                                                                        <li>Slovakia</li>
+                                                                        <li>Slovenia</li>
+                                                                        <li>Spain*</li>
+                                                                        <li>Sweden</li>
+                                                                        <li>Switzerland</li>
+                                                                        <li>Turkey*</li>
+                                                                        <li>Ukraine</li>
+                                                                        <li>United Kingdom*</li>
+                                                                        <li>Vatican City</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn d-flex align-items-center pad-right-2rem" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                                <span class="holder-id">U</span> USA, Canada & Caribbean
+                                                            </button>
+                                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                        </h2>
+                                                    </div>
+                                            
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Albania</li>
+                                                                        <li>Andorra</li>
+                                                                        <li>Armenia*</li>
+                                                                        <li>Austria</li>
+                                                                        <li>Azerbaijan*</li>
+                                                                        <li>Belarus</li>
+                                                                        <li>Belgium</li>
+                                                                        <li>Bosnia and Herzegovina</li>
+                                                                        <li>Bulgaria</li>
+                                                                        <li>Croatia</li>
+                                                                        <li>Cyprus</li>
+                                                                        <li>Czech Republic</li>
+                                                                        <li>Denmark*</li>
+                                                                        <li>Estonia</li>
+                                                                        <li>Finland</li>
+                                                                        <li>France*</li>
+                                                                        <li>Georgia*</li>
+                                                                        <li>Germany</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Greece</li>
+                                                                        <li>Hungary</li>
+                                                                        <li>Iceland</li>
+                                                                        <li>Ireland</li>
+                                                                        <li>Italy</li>
+                                                                        <li>Kazakhstan*</li>
+                                                                        <li>Kosovo</li>
+                                                                        <li>Latvia</li>
+                                                                        <li>Liechtenstein</li>
+                                                                        <li>Lithuania</li>
+                                                                        <li>Luxembourg</li>
+                                                                        <li>Malta</li>
+                                                                        <li>Moldova</li>
+                                                                        <li>Monaco</li>
+                                                                        <li>Montenegro</li>
+                                                                        <li>Netherlands*</li>
+                                                                        <li>North Macedonia</li>
+                                                                        <li>Norway</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Poland</li>
+                                                                        <li>Portugal</li>
+                                                                        <li>Romania</li>
+                                                                        <li>Russia*</li>
+                                                                        <li>San Marino</li>
+                                                                        <li>Serbia</li>
+                                                                        <li>Slovakia</li>
+                                                                        <li>Slovenia</li>
+                                                                        <li>Spain*</li>
+                                                                        <li>Sweden</li>
+                                                                        <li>Switzerland</li>
+                                                                        <li>Turkey*</li>
+                                                                        <li>Ukraine</li>
+                                                                        <li>United Kingdom*</li>
+                                                                        <li>Vatican City</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingThree">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn d-flex align-items-center pad-right-2rem" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                                <span class="holder-id">O</span> Others Included
+                                                            </button>
+                                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                        </h2>
+                                                    </div>
+                                            
+                                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Albania</li>
+                                                                        <li>Andorra</li>
+                                                                        <li>Armenia*</li>
+                                                                        <li>Austria</li>
+                                                                        <li>Azerbaijan*</li>
+                                                                        <li>Belarus</li>
+                                                                        <li>Belgium</li>
+                                                                        <li>Bosnia and Herzegovina</li>
+                                                                        <li>Bulgaria</li>
+                                                                        <li>Croatia</li>
+                                                                        <li>Cyprus</li>
+                                                                        <li>Czech Republic</li>
+                                                                        <li>Denmark*</li>
+                                                                        <li>Estonia</li>
+                                                                        <li>Finland</li>
+                                                                        <li>France*</li>
+                                                                        <li>Georgia*</li>
+                                                                        <li>Germany</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Greece</li>
+                                                                        <li>Hungary</li>
+                                                                        <li>Iceland</li>
+                                                                        <li>Ireland</li>
+                                                                        <li>Italy</li>
+                                                                        <li>Kazakhstan*</li>
+                                                                        <li>Kosovo</li>
+                                                                        <li>Latvia</li>
+                                                                        <li>Liechtenstein</li>
+                                                                        <li>Lithuania</li>
+                                                                        <li>Luxembourg</li>
+                                                                        <li>Malta</li>
+                                                                        <li>Moldova</li>
+                                                                        <li>Monaco</li>
+                                                                        <li>Montenegro</li>
+                                                                        <li>Netherlands*</li>
+                                                                        <li>North Macedonia</li>
+                                                                        <li>Norway</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Poland</li>
+                                                                        <li>Portugal</li>
+                                                                        <li>Romania</li>
+                                                                        <li>Russia*</li>
+                                                                        <li>San Marino</li>
+                                                                        <li>Serbia</li>
+                                                                        <li>Slovakia</li>
+                                                                        <li>Slovenia</li>
+                                                                        <li>Spain*</li>
+                                                                        <li>Sweden</li>
+                                                                        <li>Switzerland</li>
+                                                                        <li>Turkey*</li>
+                                                                        <li>Ukraine</li>
+                                                                        <li>United Kingdom*</li>
+                                                                        <li>Vatican City</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingFour">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn d-flex align-items-center pad-right-2rem" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                                <span class="holder-id">E</span> Exclusions
+                                                            </button>
+                                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                        </h2>
+                                                    </div>
+                                            
+                                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Albania</li>
+                                                                        <li>Andorra</li>
+                                                                        <li>Armenia*</li>
+                                                                        <li>Austria</li>
+                                                                        <li>Azerbaijan*</li>
+                                                                        <li>Belarus</li>
+                                                                        <li>Belgium</li>
+                                                                        <li>Bosnia and Herzegovina</li>
+                                                                        <li>Bulgaria</li>
+                                                                        <li>Croatia</li>
+                                                                        <li>Cyprus</li>
+                                                                        <li>Czech Republic</li>
+                                                                        <li>Denmark*</li>
+                                                                        <li>Estonia</li>
+                                                                        <li>Finland</li>
+                                                                        <li>France*</li>
+                                                                        <li>Georgia*</li>
+                                                                        <li>Germany</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Greece</li>
+                                                                        <li>Hungary</li>
+                                                                        <li>Iceland</li>
+                                                                        <li>Ireland</li>
+                                                                        <li>Italy</li>
+                                                                        <li>Kazakhstan*</li>
+                                                                        <li>Kosovo</li>
+                                                                        <li>Latvia</li>
+                                                                        <li>Liechtenstein</li>
+                                                                        <li>Lithuania</li>
+                                                                        <li>Luxembourg</li>
+                                                                        <li>Malta</li>
+                                                                        <li>Moldova</li>
+                                                                        <li>Monaco</li>
+                                                                        <li>Montenegro</li>
+                                                                        <li>Netherlands*</li>
+                                                                        <li>North Macedonia</li>
+                                                                        <li>Norway</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-6">
+                                                                    <ul class="country-list">
+                                                                        <li>Poland</li>
+                                                                        <li>Portugal</li>
+                                                                        <li>Romania</li>
+                                                                        <li>Russia*</li>
+                                                                        <li>San Marino</li>
+                                                                        <li>Serbia</li>
+                                                                        <li>Slovakia</li>
+                                                                        <li>Slovenia</li>
+                                                                        <li>Spain*</li>
+                                                                        <li>Sweden</li>
+                                                                        <li>Switzerland</li>
+                                                                        <li>Turkey*</li>
+                                                                        <li>Ukraine</li>
+                                                                        <li>United Kingdom*</li>
+                                                                        <li>Vatican City</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary px-5">Open mail</button>
+                                            <p class="modal-footlink"><a href="#" class="btn-link">Resend email</a></p>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal end -->
+                        </div>
+                        
+                        <h3>Monthly subscription</h3>
+                        <h5 class="block-sub-header">Total cost for all people on policy</h5>
+
+                        <div class="lbl-cost-card mb-4">
+                            <div class="label-sec">This is how much you’ll pay for your monthly subscription</div>
+                            <div class="cost-sec"><strong>&pound;4.5</strong> / month</div>
+                        </div>
+
+                        <div>
+                            <a href="#" class="btn-link font-sm">View your policy (IPID)</a>
+                        </div>
+
+                        <div class="d-sm-flex justify-content-between my-5">
+                            <button class="btn btn-primary cont-btn mb-3 mb-sm-0 order-sm-12">Continue <span class="icon-arrow-right pull-right"></span></button>
+                            <button class="btn btn-ternary cont-btn order-sm-1">Edit details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="assets/js/public/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/public/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/public/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/public/moment.js"></script>
+    <script type="text/javascript" src="assets/js/public/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>

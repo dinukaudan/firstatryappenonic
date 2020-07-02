@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAPP Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="description" content="content" />
+
+    <!-- <link rel="stylesheet" data-th-href="${portal.assetUrl({'_path=common/css/bootstrap.css'})}" href="/assets/common/css/bootstrap.css"/> -->
+    <!-- <link rel="stylesheet" data-th-href="${portal.assetUrl({'_path=common/css/font-awesome.min.css'})}" href="/assets/common/css/font-awesome.min.css" /> -->
+    <!-- <link rel="stylesheet" data-th-href="${portal.assetUrl({'_path=common/css/sl-slide.css'})}" href="/assets/common/css/sl-slide.css" /> -->
+    <!-- <link rel="stylesheet" data-th-href="${portal.assetUrl({'_path=common/css/override.css'})}"/> -->
+    <!-- <script data-th-src="${portal.assetUrl({'_path=common/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js'})}" src="/assets/common/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+
+    <link rel="shortcut icon" data-th-href="${portal.assetUrl({'_path=assets/travel/wapp/web/images/favicon.ico'})}"/>
+    <link rel="stylesheet" type="text/css" data-th-href="${portal.assetUrl({'_path=travel/wapp/web/css/style.css'})}" media="screen"/>
+    <link rel="stylesheet" type="text/css" data-th-href="${portal.assetUrl({'_path=travel/wapp/web/css/public/icomoon.css'})}" media="screen"/>
+    <link rel="stylesheet" type="text/css" data-th-href="${portal.assetUrl({'_path=travel/wapp/web/css/public/jquery-ui.min.css'})}" media="screen"/>
+
+
+</head>
+<body>
+    <div class="main-wrapper signin-pg">
+        <aside>
+            <a href="#" class="wapp-logo">
+                <img data-th-src="${portal.assetUrl({'_path=/travel/wapp/web/images/logo.png'})}" />
+            </a>
+            <span class="circle"></span>
+        </aside>
+        <!-- Main body -->
+        <!--/* Render any components added to this region - except for Fragments. */-->
+        <div class="content" data-portal-region="main" data-th-unless="${isFragment}">
+            <div data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
+                <div data-portal-component="${component.path}" data-th-remove="tag"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/jquery.js'})}" src="assets/travel/wapp/web/js/public/jquery.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/jquery-ui.min.js'})}" src="assets/travel/wapp/web/js/public/jquery-ui.min.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/bootstrap.bundle.min.js'})}" src="assets/travel/wapp/web/js/public/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/moment.js'})}" src="assets/travel/wapp/web/js/public/moment.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/public/bootstrap-datetimepicker.min.js'})}" src="assets/travel/wapp/web/js/public/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript"  data-th-src="${portal.assetUrl({'_path=travel/wapp/web/js/custom.js'})}" src="assets/travel/wapp/web/js/custom.js"></script>
+
+
+    <!-- <script data-th-src="${portal.assetUrl({'_path=common/js/vendor/jquery-3.1.1.min.js'})}" src="/assets/common/js/vendor/jquery-3.1.1.min.js"></script>
+    <script data-th-src="${portal.assetUrl({'_path=common/js/bootstrap.min.js'})}" src="/assets/common/js/bootstrap.min.js"></script>
+    <script data-th-src="${portal.assetUrl({'_path=common/js/jquery.ba-cond.min.js'})}" src="/assets/common/js/jquery.ba-cond.min.js" ></script>
+    <script data-th-src="${portal.assetUrl({'_path=common/js/jquery.slitslider.js'})}" src="/assets/common/js/jquery.slitslider.js" ></script>
+    <script data-th-src="${portal.assetUrl({'_path=common/js/slider.js'})}" src="/assets/common/js/slider.js"></script>
+    <script data-th-src="${portal.assetUrl({'_path=common/js/twitter-bootstrap-hover-dropdown.min.js'})}" src="/assets/common/js/twitter-bootstrap-hover-dropdown.min.js" ></script> -->
+    <!-- <script data-th-src="${portal.assetUrl({'_path=common/js/main.js'})}" src="/assets/common/js/main.js" ></script> -->
+</body>
+</html>

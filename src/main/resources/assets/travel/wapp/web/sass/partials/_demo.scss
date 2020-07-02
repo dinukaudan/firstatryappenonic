@@ -1,0 +1,138 @@
+.wapp-logo {
+  margin-top: 8px;
+  display: inline-block;
+
+  img {
+    width: 40px;
+  }
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center; 
+
+  aside {
+    background: #dddddd;
+    height: 100vh;
+    overflow: hidden;
+    width: 60px;
+    text-align: center;
+  }
+
+  .content {
+    flex: 1;
+    height: 100vh;
+
+    &.signin-pg {
+      text-align: center;
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+    }
+
+    .signin-wrapper {
+      width: 300px;
+
+      h5 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 50px;
+      }
+
+      .signin-logo {
+        margin-bottom: 60px;
+
+        img {
+          width: 100px;
+        }
+      }
+
+      .btn-controls {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          flex: 1;
+          margin: 0 4px;
+        }
+      }
+    }
+
+    &.registration-pg {
+
+      .reg-progress {
+        background: #f6f6f6;
+        padding: 20px 40px;
+        border-right: 1px solid #b2b2b2;
+        height: 100vh;
+
+        @include media-breakpoint-down(md) {
+          height: 100%;
+        }
+
+        .progress-steps {
+          padding: 0;
+
+          li {
+            background: #dddddd;
+            padding: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .step-name {
+              text-transform: uppercase;
+              font-size: 13px;
+            }
+
+            &.in-progress {
+              background: #f8f8f8;
+              border: 1px solid #313131;
+              font-weight: 600;
+
+              .step-status {
+                text-decoration: underline;
+              }
+            }
+
+            &.completed {
+              background: #222;
+              color: #fff;
+
+              .step-status:after {
+                content: "\f044";
+                font-size: 18px;
+                font-family: "fontAwesome";
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .reg-foot-note {
+          font-size: 12px;
+        }
+      }
+
+      .create-account-sec {
+        padding: 20px 40px;
+
+        .dob-field {
+          display: flex;
+
+          span {
+            flex: 1;
+            margin-right: 12px;
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

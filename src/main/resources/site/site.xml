@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+  <form/>
+  <mappings>
+    <mapping controller="/controllers/graphql.js" order="50">
+      <pattern>/api</pattern>
+    </mapping>
+  </mappings>
+</site>

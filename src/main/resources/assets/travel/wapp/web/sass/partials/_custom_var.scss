@@ -1,0 +1,109 @@
+$red: #ff0000;
+$body-color: #2a2a2a;
+$primary: #00D857;
+$secondary: #222222;
+$bg-primary: #00a542;
+$bg-secondary: #D3D3D3;
+$white: #ffffff;
+$card-border: #f6f6f6;
+$gray-border: #e8e8e8;
+$primary-title: #222222;
+$light-gray-title: #777777;
+$gray-bg: #fcfcfc;
+$card-text-color: #585858;
+$disabled-gray: #d3d3d3;
+$primary-light: rgba(34, 34, 34, 0.75);
+$error-color: #ff9a00;
+
+// Bootstrap variable overrides
+
+$body-color: #4c4c4c;
+$link-color: $body-color;
+$link-decoration: underline;
+$link-hover-decoration: underline;
+$btn-link-disabled-color: #d3d3d3;
+
+$progress-height: 0.375rem;
+
+$font-family-sans-serif: "SFProText";
+$font-quicksand: 'Quicksand';
+
+$font-size-base: 0.875rem;
+$font-weight-bold: 600;
+
+$data-svg-prefix: 'data:image/svg+xml;utf-8,';
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1120px
+);
+
+$container-max-widths: (
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1120px
+);
+
+$card-border-radius:    0;
+$btn-border-radius:     2.25rem;
+$btn-border-radius-lg:  2.25rem;
+$btn-border-radius-sm:  2.25rem;
+$btn-padding-x: 1rem;
+$btn-padding-y: 0.875rem;
+$btn-font-size: 1rem;
+$btn-line-height: 1.1;
+$btn-font-weight: 600;
+
+$card-border-color: $gray-border;
+// $input-border-color: $card-border;
+
+$input-border-radius:    2.25rem;
+$input-border-radius-lg: 2.25rem;
+$input-border-radius-sm: 2.25rem;
+$input-btn-padding-x: 1.75rem;
+$input-focus-box-shadow: 0;
+
+$input-border-color: $card-border;
+
+$table-cell-padding: 0.5rem;
+
+$alert-padding-y: 0.375rem;
+$alert-padding-x: 0.75rem;
+$alert-margin-bottom: 0.75rem;
+$alert-border-radius: 0;
+
+$tooltip-bg: $primary;
+$tooltip-max-width: 290px;
+
+$modal-content-border-radius: 0;
+$modal-dialog-margin-y-sm-up: 4rem;
+$modal-inner-padding: 1rem 2rem;
+
+$nav-pills-border-radius: 0;
+$nav-tabs-border-radius: 0;
+$nav-tabs-border-color: $primary;
+$nav-tabs-link-active-border-color: $primary $primary $white;
+$nav-link-padding-y: 0.625rem;
+$nav-link-padding-x: 1rem;
+
+$badge-padding-y: 0.375rem;
+$badge-padding-x: 0.75rem;
+$badge-border-radius: 0;
+$badge-font-weight: 700;
+
+$close-font-size: 2rem;
+$close-font-weight: normal;
+
+$modal-backdrop-opacity: 0.8;
+
+$custom-control-indicator-size: 1.5rem;
+$custom-control-gutter: 1rem;
+$custom-switch-width: $custom-control-indicator-size * 2;
+$custom-control-indicator-bg: $primary;
+
+$border-radius:  25px;
+

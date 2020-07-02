@@ -1,0 +1,121 @@
+<div class="welcome-wrapper">
+    <div class="sidebar">
+        <div>
+            <h4 class="pad-right-5rem">Welcome to wapp!</h4>
+            <p class="pad-right-5rem mb-4">You're a hop, skip and a jump from being covered.</p>
+            <ul class="register-process">
+                <li class="completed">
+                    <span class="register-step-no">1</span>
+                    <span class="register-step-name">Account creation</span>
+                </li>
+                <li class="active">
+                    <span class="register-step-no">2</span>
+                    <span class="register-step-name">Health check</span>
+                </li>
+                <li>
+                    <span class="register-step-no">3</span>
+                    <span class="register-step-name">People on policy</span>
+                </li>
+                <li>
+                    <span class="register-step-no">4</span>
+                    <span class="register-step-name">Quote & payment</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="side-footnote pad-right-5rem">
+            <span class="text-uppercase">All information provided is saved for 30 days</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-title">
+            <a href="#" class="btn-link back-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+            <span>Create your account</span>
+            <span>2/4</span>
+        </div>
+        <div class="content-body">
+            <form method="POST" data-th-action="${portal.componentUrl({})}" id="registerStep2Form">
+                <h2>Thank you <span data-th-text="${firstName}"></span>!<br> What's your email address?</h2>
+                <!--/*<a data-th-href="${portal.serviceUrl({'_service=myservice', 'a=3'})}">Link</a>*/-->
+                <p class="mb-2">Please use your primary email as this is where your policy documents will be sent.</p>
+                <div class="mb-5 position-relative">
+                    <a href="#" class="btn-link">Why is this important?</a>
+                    
+                    <!--/* TODO: show this popup, upon clicking the above link*/-->
+                    <div class="wapp-popover" style="display: none;">
+                        <div class="wapp-popover-header">
+                            <h5 class="wapp-popover-title">Email Address</h5>
+                            <button type="button" class="close">
+                                <span aria-hidden="true" data-dissmiss="true">×</span>
+                            </button>
+                        </div>
+                        <div class="wapp-popover-body">
+                            <p>Your policy documents will be sent via email. Your cover is only valid once those documents have been sent 
+                                so please make sure you use your usual email address.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group wapp-form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" name="email" value="ruchira@intervest.lk"/>
+                </div>
+                <div class="form-group wapp-form-group">
+                    <label>Password</label>
+                    <div class="eye-pwd">
+                        <input type="password" class="form-control" name="loginPassword" value="password"/>
+                        <span class="icon-eye"></span>
+                    </div>
+                    <div class="mt-4 mx-3">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="notification-label"><i class="fa fa-info-circle" aria-hidden="true"></i> Great!</div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <button type="submit" class="btn btn-primary cont-btn">Next <span class="icon-arrow-right pull-right"></span></button>
+                </div>
+                <!-- Modal end -->
+            </form>
+        </div>
+
+        <script type="text/javascript" data-th-if="${#strings.equals('success',status)}">
+            window.addEventListener('load', function() {
+                $('#emailSentModal').modal('show');
+            })
+        </script>
+        <script type="text/javascript" data-th-if="${#strings.equals('error',status)}" th:inline="javascript">
+            window.addEventListener('load', function() {
+                /*<![CDATA[*/
+                    var message = /*[[${message}]]*/ 'default';
+                    alert(message);
+                /*]]>*/
+            })
+        </script>
+
+        <!-- Modal start -->
+        <div class="modal fade" id="emailSentModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="icon-title">
+                        <img data-th-src="${portal.assetUrl({'_path=travel/wapp/web/images/icons/email-sent.png'})}" width="106px" />
+                    </div>
+                    <h4 class="modal-body-title">Verify your email address</h4>
+                    <p class="mb-2">We've sent an email to <strong class="d-block">[[${email}]]</strong></p>
+                    <p class="modal-body-txtwrap">Please verify your email address. This might be in your junk folder</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary px-5">Open mail</button>
+                    <p class="modal-footlink"><a href="#" class="btn-link">Resend email</a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
